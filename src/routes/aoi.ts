@@ -3,6 +3,6 @@ import { list } from "../controllers/aoi";
 
 const router = Router();
 
-router.get("/", list);
+router.post("/", list);
 
 export default router;
