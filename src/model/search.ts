@@ -1,3 +1,9 @@
+/* Basic sequential and binary search
+** algorithms implemented in TypeScript
+**
+** Author: Fabrício Galende M. de Carvalho, DSc
+*/
+
 class Search<T>{
     sequential(e:T, v:T[]):number{
         let pos: number = -1;
