@@ -1,10 +1,10 @@
 <h1 align="center"> BACK-END  </h1>
 
-###  🧑‍💻- Tecnologias
+### Tecnologias
 
 Tecnologias e ferramentas utilizadas no projeto: `Typescript, NodeJS / Express.js, Postgres, Cors, postGIS`
 
-## ⚙️ - Como Executar a aplicação
+## Como Executar a aplicação
 ```bash
 # Baixe este repositório ou clone pelo Git usando o comando:
 $ git clone https://github.com/candago/back.git
@@ -26,7 +26,7 @@ $ npm i
 $ npm start || npm run dev
 ```
 
-## 🪧 - Rotas da aplicação
+## Rotas da aplicação
 <div align="center">
   
 |                                                                    Tipo | Rota                       | Ação                              |
@@ -45,7 +45,7 @@ $ npm start || npm run dev
 
 </div>
 
-## 🗂️ - Estruturação das pastas
+## Estruturação das pastas
 
 | Pasta                    | Definição                                                                                  |
 | ------------------------ | ------------------------------------------------------------------------------------------ |
