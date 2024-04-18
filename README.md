@@ -15,11 +15,15 @@ $ cd back
 # Utilizando o Postgress crie o banco com o comando
 'CREATE DATABASE bdapi'
 
+# Configurando ambiente:
+> src/controllers/bd.ts
+> configure as credenciais do banco de acordo com as suas credenciais
+
 # Instale as dependências do projeto
 $ npm i
 
 # Inicie o Projeto
-$ npm start
+$ npm start || npm run dev
 ```
 
 ## 🪧 - Rotas da aplicação
