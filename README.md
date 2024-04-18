@@ -28,13 +28,13 @@ $ npm start
 |                                                                    Tipo | Rota                       | Ação                              |
 | ----------------------------------------------------------------------: | :------------------------- | :-------------------------------- |
 |                                                                    <hr> | <hr>                       | **Controle de usuários**          |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/alteracao/`              | Realiza alterações no banco        |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/aoi`                     |                              |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/apontamento`             | Ilustração de polígonos       |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/index`                   | Diretorio raiz com as rotas  |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/grade`                   | Listagem de grade de atuação  |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]()  | `/search`                   | Listagem de grade de atuação  |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/sorting`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/alteracao/{tablename}`              | Realiza alterações no banco        |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/aoi/{tablename}`                     |                              |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/apontamento/{tablename}`             | Ilustração de polígonos       |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/index/{tablename}`                   | Diretorio raiz com as rotas  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/grade/{tablename}`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]()  | `/search/{tablename, filterBy, filterValue}`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/sorting/{tablename}`                   | Listagem de grade de atuação  |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/user/{userId}`           | Cadastrar um usuário |
 
 
@@ -46,8 +46,8 @@ $ npm start
 | Pasta                    | Definição                                                                                  |
 | ------------------------ | ------------------------------------------------------------------------------------------ |
 | 📁 src/                   | Arquivos com o código fonte do projeto                                                     |
-| 📁 src/controllers        | Arquivos com os métodos de requisição das rotas                                            |
-| 📁 src/models             | Arquivos com as entidades do banco de dados do projeto                                     |
+| 📁 src/controllers/        | Arquivos com os métodos de requisição das rotas                                            |
+| 📁 src/models/             | Arquivos com as entidades do banco de dados do projeto                                     |
 | 📁 src/routes/            | Arquivos para expor rotas de controles da aplicação                                        |
 | 📄 index.ts               | Arquivo usado para configurar o typescript como sintaxe, organização de arquivos, etc.     |
 | 📄 tsconfig.json          | Arquivo usado para configurar o typescript como sintaxe, organização de arquivos, etc.     |
