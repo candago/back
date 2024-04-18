@@ -53,6 +53,6 @@ $ npm start || npm run dev
 | 📁 src/controllers/        | Arquivos com os métodos de requisição das rotas                                            |
 | 📁 src/models/             | Arquivos com as entidades do banco de dados do projeto                                     |
 | 📁 src/routes/            | Arquivos para expor rotas de controles da aplicação                                        |
-| 📄 index.ts               | Arquivo usado para configurar o typescript como sintaxe, organização de arquivos, etc.     |
+| 📄 index.ts               | Arquivo usado para configuração de rotas.     |
 | 📄 tsconfig.json          | Arquivo usado para configurar o typescript como sintaxe, organização de arquivos, etc.     |
 | 📄 package.json           | Arquivo usado gerenciar as dependencias do projeto com o Yarn e compor scripts de terminal |
