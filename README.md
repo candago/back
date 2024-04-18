@@ -28,14 +28,14 @@ $ npm start
 |                                                                    Tipo | Rota                       | Ação                              |
 | ----------------------------------------------------------------------: | :------------------------- | :-------------------------------- |
 |                                                                    <hr> | <hr>                       | **Controle de usuários**          |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/alteracao/`              | Realiza alterações no banco        |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/aoi`                     |                              |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/alteracao/`              | Realiza alterações no banco        |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/aoi`                     |                              |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/apontamento`             | Ilustração de polígonos       |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/index`                   | Diretorio raiz  |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/grade`                   | Listagem de grade de atuação  |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/search`                   | Listagem de grade de atuação  |
-|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/sorting`                   | Listagem de grade de atuação  |
-| [![](https://img.shields.io/badge/DELETE-CD853F?style=for-the-badge)]() | `/user/{userId}`           | Cadastrar um usuário |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/index`                   | Diretorio raiz com as rotas  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/grade`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]()  | `/search`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/sorting`                   | Listagem de grade de atuação  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/user/{userId}`           | Cadastrar um usuário |
 
 
 
