@@ -33,7 +33,7 @@ $ npm start || npm run dev
 | ----------------------------------------------------------------------: | :------------------------- | :-------------------------------- |
 |                                                                    <hr> | <hr>                       | **Controle de usuários**          |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/alteracao/{tablename}`              | Realiza alterações no banco        |
-|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/aoi/{tablename}`                     |                              |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/aoi/{tablename}`                     | Retorna área de interesse desejado                             |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/apontamento/{tablename}`             | Ilustração de polígonos       |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/index/{tablename}`                   | Diretorio raiz com as rotas  |
 |   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/grade/{tablename}`                   | Listagem de grade de atuação  |
