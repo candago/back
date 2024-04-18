@@ -12,7 +12,7 @@ $ git clone https://github.com/candago/back.git
 # Acesse a pasta do projeto
 $ cd back
 
-# Utilizando o Postgress crie o banco com o comando
+# Utilizando o Postgres crie o banco com o comando
 'CREATE DATABASE bdapi'
 
 # Configurando ambiente:
