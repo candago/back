@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import pool from "./db";
-import { Search } from "../model/search"; // Importando a classe Search
+import { Search } from "./search"; // Importando a classe Search
 
 const search = new Search(); // Criando uma instância da classe Search
 

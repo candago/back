@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import pool from "./db";
-import { Sort } from "../model/bubble_sort";
+import { Sort } from "./bubble_sort";
 
 const sort = new Sort<number>(); 
 
