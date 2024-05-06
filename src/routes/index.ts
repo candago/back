@@ -16,5 +16,4 @@ router.use("/grade", grade);
 router.use("/search", searchController);
 router.use("/sort", sortingController);
 router.use("/user", user);
-
 export default router;
