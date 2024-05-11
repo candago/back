@@ -259,4 +259,9 @@ create view tb_grade_atuacao as (
 	select * from tbgrade_atuacao_cruzeiro);
 
 
+create table usuarios
+(id serial primary key,
+ nome varchar(125),
+ email varchar(50),
+ senha varchar);
 
