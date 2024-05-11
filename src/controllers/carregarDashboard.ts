@@ -1,8 +1,7 @@
 import { Request,Response } from "express";
-import pool from "./db";
 
-export async function list(req:Request, res:Response){
-    const {tablename} = req.body;
-    const response = await pool.query(` from ${tablename}`);
-    res.json(response.rows);
+export async function dashboard(req:Request, res:Response){
+    const {dashboard} = req.body;
+    const response = `redirecionado para ${dashboard}`
+    res.json(response);
 }

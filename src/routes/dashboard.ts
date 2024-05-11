@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { list } from "../controllers/carregarDashboard";
+import { dashboard } from "../controllers/carregarDashboard";
 
 const router = Router();
 
-router.post("/", list);
+router.post("/", dashboard);
 
 export default router;
