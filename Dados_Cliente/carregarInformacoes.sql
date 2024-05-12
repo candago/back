@@ -139,7 +139,7 @@ encoding 'UTF-8'
 );
 
 copy tbalteracao_taubate
-from 'C:\Dados_Cliente\alteracao_taubate.csv'
+from 'D:\Dados_Cliente\ABP\alteracao_taubate.csv'
 with (
 format csv,
 header true,
@@ -149,7 +149,7 @@ encoding 'UTF-8'
 );
 
 copy tbaoi_atibaia
-from 'C:\Dados_Cliente\aoi_atibaia.csv'
+from 'D:\Dados_Cliente\ABP\aoi_atibaia.csv'
 with (
 format csv,
 header true,
@@ -236,4 +236,10 @@ delimiter ';',
 null 'NULL',
 encoding 'UTF-8'
 );
+
+create table usuarios
+(id serial primary key,
+ nome varchar(125),
+ email varchar(50),
+ senha varchar);
 
