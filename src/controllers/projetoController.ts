@@ -32,5 +32,29 @@ export function getNomeProjeto(req: Request, res: Response) {
     });
 }
 
+export function listarProjetos(req: Request, res: Response) {
+    const {analista, municipio} = req.body;
+    const query = `
+        SELECT 
+            g.*
+        FROM tb_grade_atuacao g
+        INNER JOIN tb_aoi a ON ST_Intersects(g.geom, a.geom)
+        WHERE g.atribuicao = $1
+        AND (
+            a.nm_mun = $2
+        );
+    `;
+
+    pool.query(query, [analista, municipio], (error, result) => {
+        if (error) {
+            console.error('Erro ao listar projetos:', error);
+            res.status(500).send('Erro ao listar projetos');
+        } else {
+            res.json(result.rows);
+        }
+    });
+}
+
+
 
 
