@@ -21,4 +21,5 @@ router.use("/sort", sortingController);
 router.use("/user", user);
 router.use("/projeto", projetos);
 router.use("/dashboard", dashboard);
+router.use("/grafico", grafico);
 export default router;
