@@ -139,7 +139,7 @@ encoding 'UTF-8'
 );
 
 copy tbalteracao_taubate
-from 'D:\Dados_Cliente\ABP\alteracao_taubate.csv'
+from 'D:\Dados_Cliente\alteracao_taubate.csv'
 with (
 format csv,
 header true,
@@ -149,7 +149,7 @@ encoding 'UTF-8'
 );
 
 copy tbaoi_atibaia
-from 'D:\Dados_Cliente\ABP\aoi_atibaia.csv'
+from 'D:\Dados_Cliente\aoi_atibaia.csv'
 with (
 format csv,
 header true,
