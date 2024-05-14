@@ -119,7 +119,7 @@ geom geometry(multipolygon,31983)
 --INSERT DOS ARQUIVOS DO CLIENTE
 
 copy tbalteracao_atibaia
-from 'C:\Dados_Cliente\alteracao_atibaia.csv'
+from 'D:\Dados_Cliente\alteracao_atibaia.csv'
 with (
 format csv,
 header true,
@@ -129,7 +129,7 @@ encoding 'UTF-8'
 );
 
 copy tbalteracao_cruzeiro
-from 'C:\Dados_Cliente\alteracao_cruzeiro.csv'
+from 'D:\Dados_Cliente\alteracao_cruzeiro.csv'
 with (
 format csv,
 header true,
@@ -159,7 +159,7 @@ encoding 'UTF-8'
 );
 
 copy tbaoi_cruzeiro
-from 'C:\Dados_Cliente\aoi_cruzeiro.csv'
+from 'D:\Dados_Cliente\aoi_cruzeiro.csv'
 with (
 format csv,
 header true,
@@ -169,7 +169,7 @@ encoding 'UTF-8'
 );
 
 copy tbaoi_taubate
-from 'C:\Dados_Cliente\aoi_taubate.csv'
+from 'D:\Dados_Cliente\aoi_taubate.csv'
 with (
 format csv,
 header true,
@@ -179,7 +179,7 @@ encoding 'UTF-8'
 );
 
 copy tbapontamento_alteracao_atibaia
-from 'C:\Dados_Cliente\apontamento_alteracao_atibaia.csv'
+from 'D:\Dados_Cliente\apontamento_alteracao_atibaia.csv'
 with (
 format csv,
 header true,
@@ -189,7 +189,7 @@ encoding 'UTF-8'
 );
 
 copy tbapontamento_alteracao_cruzeiro
-from 'C:\Dados_Cliente\apontamento_alteracao_cruzeiro.csv'
+from 'D:\Dados_Cliente\apontamento_alteracao_cruzeiro.csv'
 with (
 format csv,
 header true,
@@ -199,7 +199,7 @@ encoding 'UTF-8'
 );
 
 copy tbapontamento_alteracao_taubate
-from 'C:\Dados_Cliente\apontamento_alteracao_taubate.csv'
+from 'D:\Dados_Cliente\apontamento_alteracao_taubate.csv'
 with (
 format csv,
 header true,
@@ -209,7 +209,7 @@ encoding 'UTF-8'
 );
 
 copy tbgrade_atuacao_atibaia
-from 'C:\Dados_Cliente\grade_atuacao_atibaia.csv'
+from 'D:\Dados_Cliente\grade_atuacao_atibaia.csv'
 with (format csv,
 header true,
 delimiter ';',
@@ -218,7 +218,7 @@ encoding 'UTF-8'
 );
 
 copy tbgrade_atuacao_cruzeiro
-from 'C:\Dados_Cliente\grade_atuacao_cruzeiro.csv'
+from 'D:\Dados_Cliente\grade_atuacao_cruzeiro.csv'
 with (
 format csv,
 header true,
@@ -228,7 +228,7 @@ encoding 'UTF-8'
 );
 
 copy tbgrade_atuacao_taubate
-from 'C:\Dados_Cliente\grade_atuacao_taubate.csv'
+from 'D:\Dados_Cliente\grade_atuacao_taubate.csv'
 with (
 format csv,
 header true,
