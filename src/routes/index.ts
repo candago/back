@@ -19,5 +19,5 @@ router.use("/search", searchController);
 router.use("/sort", sortingController);
 router.use("/user", user);
 router.use("/projeto", projetos);
-router.use("/dashboard", dashboard)
+router.use("/dashboard", dashboard);
 export default router;
