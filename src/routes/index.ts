@@ -8,6 +8,7 @@ import dashboard  from "./dashboard";
 import projetos from "./projetos";
 import { searchController } from "../controllers/searchController";
 import { sortingController } from "../controllers/sortingController";
+import grafico from "./grafico";
 
 const router = Router();
 
@@ -20,4 +21,5 @@ router.use("/sort", sortingController);
 router.use("/user", user);
 router.use("/projeto", projetos);
 router.use("/dashboard", dashboard);
+router.use("/grafico", grafico);
 export default router;
