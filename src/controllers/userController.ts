@@ -27,6 +27,8 @@ export async function getUserById(req:Request, res:Response){
 export async function login(req:Request, res:Response){
     const info = req.body;
     const loginInfo = await pool.query(`select * from usuarios where email = '${info.email}' and senha = '${info.senha}'`)
-    res.json(loginInfo.rows[1])
-
+    if(loginInfo.rowCount == null || loginInfo.rowCount == 0){
+        res.status(403)
+    } else res.status(200)
+    res.json(res.status)
 }
