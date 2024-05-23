@@ -139,7 +139,7 @@ encoding 'UTF-8'
 );
 
 copy tbalteracao_taubate
-from 'D:\Dados_Cliente\ABP\alteracao_taubate.csv'
+from 'D:\Dados_Cliente\alteracao_taubate.csv'
 with (
 format csv,
 header true,
@@ -149,7 +149,7 @@ encoding 'UTF-8'
 );
 
 copy tbaoi_atibaia
-from 'D:\Dados_Cliente\ABP\aoi_atibaia.csv'
+from 'D:\Dados_Cliente\aoi_atibaia.csv'
 with (
 format csv,
 header true,
@@ -236,4 +236,32 @@ delimiter ';',
 null 'NULL',
 encoding 'UTF-8'
 );
+
+create view tb_aoi as (
+select * from (
+	select cd_mun, nm_mun, sigla_uf, area_km2, geom from tbaoi_cruzeiro union
+	select cd_mun, nm_mun, sigla_uf, area_km2, geom from tbaoi_atibaia union
+	select cd_mun, nm_mun, sigla_uf, area_km2, geom from tbaoi_taubate) aois order by cd_mun );
+
+create view tb_apontamento_alteracao as (
+	select correcao, status, obs, geom from tbapontamento_alteracao_taubate union
+	select correcao, status, obs, geom from tbapontamento_alteracao_atibaia union
+	select correcao, status, obs, geom from tbapontamento_alteracao_cruzeiro);
+
+create view tb_alteracao as (
+	select * from tbalteracao_atibaia union
+	select * from tbalteracao_taubate union
+	select * from tbalteracao_cruzeiro);
+
+create view tb_grade_atuacao as (
+	select * from tbgrade_atuacao_atibaia union
+	select * from tbgrade_atuacao_taubate union
+	select * from tbgrade_atuacao_cruzeiro);
+
+
+create table usuarios
+(id serial primary key,
+ nome varchar(125),
+ email varchar(50),
+ senha varchar);
 
