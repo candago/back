@@ -3,12 +3,13 @@ import aoi from "./aoi";
 import alteracao from "./alteracao";
 import apontamento from "./apontamento";
 import grade from "./grade";
-import user from "./user"
+import userController from "../controllers/UserController"
 import dashboard  from "./dashboard";
 import projetos from "./projetos";
 import { searchController } from "../controllers/searchController";
 import { sortingController } from "../controllers/sortingController";
 import grafico from "./grafico";
+import { validadeAcess } from "../middlewares";
 
 const router = Router();
 
@@ -18,8 +19,9 @@ router.use("/apontamento", apontamento);
 router.use("/grade", grade);
 router.use("/search", searchController);
 router.use("/sort", sortingController);
-router.use("/user", user);
+router.post("/login", userController.login);
 router.use("/projeto", projetos);
 router.use("/dashboard", dashboard);
-router.use("/grafico", grafico);
+router.use("/grafico",validadeAcess, grafico)
+
 export default router;

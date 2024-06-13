@@ -1,5 +1,4 @@
 import express from "express";
-import { getUserById } from "../controllers/userController";
 import { getNomeProjeto, listarProjetos } from "../controllers/projetoController";
 
 const router = express.Router();
