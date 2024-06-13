@@ -20,8 +20,10 @@ class UserController {
       );
       if (response.length > 0) {
         const [object] = response;
+        res.status(200)
         res.json({ ...object, token: tokenize(object) });
       } else {
+        res.status(400)
         res.json({ erro: "Dados de login não conferem" });
       }
     }
