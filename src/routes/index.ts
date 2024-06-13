@@ -20,6 +20,7 @@ router.use("/grade", grade);
 router.use("/search", searchController);
 router.use("/sort", sortingController);
 router.post("/login", userController.login);
+router.post("/signin", userController.create);
 router.use("/projeto", projetos);
 router.use("/dashboard", dashboard);
 router.use("/grafico",validadeAcess, grafico)

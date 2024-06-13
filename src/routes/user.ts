@@ -9,7 +9,7 @@ routes.put("/senha", controller.updatePassword);
 
 // somente o adm pode acessar
 routes.get("/", checkAdm, controller.list);
-routes.post("/", checkAdm, controller.create);
+routes.post("/signin", controller.create);
 routes.delete("/:iduser", checkAdm, controller.delete);
 
 routes.put("/perfil", checkAdm, controller.updateProfile);
